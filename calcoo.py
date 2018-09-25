@@ -23,4 +23,5 @@ elif sys.argv[2] == "resta":
     result = micalculadora.minus(operando1, operando2)
 else:
     sys.exit('Operación sólo puede ser sumar o restar.')
+    
 print(result)
