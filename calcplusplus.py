@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
-import sys 
+import sys
 import calcoohija
 import csv
+
 
 suma = 0
 resta = 0
@@ -15,30 +15,29 @@ micalculadora = calcoohija.CalculadoraHija()
 with open(sys.argv[1], newline='') as fichero:
     reader = csv.reader(fichero)
     for linea in reader:
-        if linea[0]=="suma":
-            for numero in range (1,len(linea)):
+        if linea[0] == "suma":
+            for numero in range(1, len(linea)):
                 op1 = suma
                 op2 = int(linea[numero])
-                suma = micalculadora.plus(op1,op2)
+                suma = micalculadora.plus(op1, op2)
             print(suma)
-        if linea[0]=="resta":
+        if linea[0] == "resta":
             resta = int(linea[1])
-            for numero in range(2,len(linea)):
+            for numero in range(2, len(linea)):
                 op1 = resta
                 op2 = int(linea[numero])
-                resta = micalculadora.minus(op1,op2)
+                resta = micalculadora.minus(op1, op2)
             print(resta)
-        if linea[0]=="multiplica":
-            for numero in range(1,len(linea)):
+        if linea[0] == "multiplica":
+            for numero in range(1, len(linea)):
                 op1 = multipli
                 op2 = int(linea[numero])
-                multipli = micalculadora.multipliedby(op1,op2)
+                multipli = micalculadora.multipliedby(op1, op2)
             print(multipli)
-        if linea[0]=="divide":
+        if linea[0] == "divide":
             divi = int(linea[1])
-            for numero in range(2,len(linea)):
+            for numero in range(2, len(linea)):
                 op1 = divi
                 op2 = int(linea[numero])
-                divi = micalculadora.dividedby(op1,op2)
+                divi = micalculadora.dividedby(op1, op2)
             print(int(divi))
-      
