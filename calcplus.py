@@ -7,7 +7,7 @@ import calcoohija
 fd = open(sys.argv[1], 'r')
 listalineas = fd.readlines()
 fd.close()
-lineasseparadas = []
+
 suma = 0
 resta = 0
 multipli = 1
