@@ -42,4 +42,4 @@ for lineas in range(0, len(listalineas)):
             op1 = divi
             op2 = int(linea[numero])
             divi = micalculadora.dividedby(op1, op2)
-        print(int(divi))
+        print(divi)
