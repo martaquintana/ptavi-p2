@@ -41,5 +41,3 @@ with open(sys.argv[1], newline='') as fichero:
                 op2 = int(linea[numero])
                 divi = micalculadora.dividedby(op1, op2)
             print(divi)
-
-
